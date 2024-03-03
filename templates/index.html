@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STISR</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}" />
+</head>
+<body>
+<div class="heard">
+    <div class="logo">
+        <img class="mb-4" src="static/img/pytorch.png" alt="" width="72" />
+        <h2>场景文本图像超分辨率</h2>
+    </div>
+      <div class="row" align="center">
+        <div class="column1">
+         <h2>原始图像</h2>
+        </div>
+        <div class="column2">
+          <h2>处理后的图像</h2>
+      </div>
+    </div>
+     <div class="panel">
+         <div class="input">
+               <input id="file-upload" class="hidden" type="file" name="file" accept="image/x-png,image/gif,image/jpeg" />
+    <label for="file-upload" id="file-drag" class="upload-box">
+      <div id="upload-caption">将图像拖到此处或单击选择图像</div>
+
+
+      <img id="image-preview" class="hidden" />
+    </label>
+
+             <div class="select">
+                 <p>
+                   请选择SR模型：
+             </p>
+             <div style="margin-bottom: 2rem;">
+
+
+                 <div class="sr">
+                      本文方法1:<input type="radio" name="background" id="method1" />
+                 </div>
+
+                  <div class="class">
+                      本文方法2:<input type="radio" name="background" id="method2"/>
+
+             </div>
+                                   </div>
+                 <div class="choose">
+                  <button class="btn"  onclick="submitImage();">超分</button>
+                  <button class="btn" onclick="downloadImage();">下载</button>
+                  <button class="btn"  onclick="clearImage();" >清除</button>
+
+
+                    </div>
+
+             </div>
+
+
+         </div>
+
+           <div class="gap"></div>
+    <div class="output">
+        <!--
+          <div id="show-box">将图像拖到此处或单击选择图像</div>
+          -->
+      <img class="mb-4" id="logo_photo" src="static/img/img_1.png" alt="" width="72" />
+        <img class="mb-4" id="outputImage" src="" alt="" />
+
+    </div>
+     </div>
+
+
+
+
+</div>
+<footer>
+    <script src="{{ url_for('static',filename='style.js') }}"></script>
+  </footer>
+</body>
+</html>

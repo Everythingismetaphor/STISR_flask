@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.logo{
+       width:100%;
+       text-align:center;
+       margin:30px 0 10px 0;
+}
+
+.logo h2{
+        font-size:35px;
+        letter-spacing:2px;
+        margin-top:20px;
+
+}
+/*原始和处理后*/
+    .row {
+
+       width:810px;
+      padding: 5px;
+      margin:0px auto;
+    }
+       .column1 {
+      float: left;
+      width: 50%;
+
+    }
+/*不显示上传文件的盒子*/
+.hidden {
+  display: none;
+}
+/*最外面的盒子*/
+.panel{
+    display: flex;
+        background:#F9FAFB;
+
+       text-align:center;
+        width:810px;
+         height: 400px;
+        margin:5px auto;
+       text-align:center;
+}
+.input{
+background:#E5E7EB;
+ border: 0.1rem dashed #838388;
+width: 400px;
+  height: 260px;
+ margin: 5px ;
+   border-radius: 0.4rem;
+}
+/* Upload box */
+.upload-box {
+  font-size: 0.8rem;
+  cursor: pointer;
+  width: 260px;
+  height: 250px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+   margin: 5px  auto;
+
+}
+.select{
+background:white;
+border: 0.1rem solid #E5E7EB;
+border-radius: 0.4rem;
+    width: 400px;
+  height: 60px;
+  margin: 10px  0;
+}
+
+
+.select p {
+  text-align: left;
+ margin: 5px;
+font-size:14px;
+}
+#upload-caption {
+        font-family:  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color:#9CA3AF;
+        /* 添加其他样式，如字体大小、颜色等 */
+    }
+    /* 图片显示框 */
+    #image-preview {
+  width: 260px; /* 图片宽度占容器的100% */
+  height: 65px; /* 高度自动调整以保持图片比例 */
+}
+    /* 图片显示框 */
+    #outputImage{
+  width: 260px; /* 图片宽度占容器的100% */
+  height: auto; /* 高度自动调整以保持图片比例 */
+}
+.sr, .class {
+  display: inline-block;
+  font-size:14px;
+}
+
+.choose {
+  display: flex;
+  justify-content: space-between; /* 使按钮等间隔分布 */
+  margin: 0 0 10px 0;
+}
+        /* 鼠标悬停时的按钮样式 */
+        .btn:hover {
+            background-color: #FFEBD8; /* 悬停时的背景颜色 */
+        }
+.btn {
+  width: calc(33.33% - 10px); /* 计算按钮宽度，减去间隔的10像素 */
+  background-color: #FFE3C8; /* 设置背景颜色为橘黄色 */
+  color: #EE7400; /* 设置文字颜色为白色 */
+  border: none; /* 移除边框 */
+  padding: 10px; /* 设置内边距 */
+  cursor: pointer; /* 添加指针样式 */
+  border-radius: 5px; /* 添加圆角 */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.output{
+    font-size: 0.8rem;
+  color: #666666;
+  cursor: pointer;
+  width: 400px;
+  height: 260px;
+  background: #fff;
+  border: 0.1rem dashed #838388;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px 5px 20px 0;
+      flex: 1;
+
+}
+
+.gap {
+  width: 10px;
+  background:white;
+}
